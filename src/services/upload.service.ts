@@ -15,6 +15,7 @@ export const UploadFileService = async (data: UploadFileServiceDTO) => {
       Bucket: env.BUCKET_NAME,
       Key: fileKey,
       ContentType: data.contentType,
+      ACL: data.ACL || "private",
     }),
     { expiresIn: 600 }
   );
