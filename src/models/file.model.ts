@@ -9,6 +9,6 @@ export const create = async (
     const file = await db.file.create({ data });
     return { data: file };
   } catch (error) {
-    return { error: error };
+    return { error: [error] };
   }
 };

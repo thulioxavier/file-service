@@ -5,7 +5,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch --env-file .env src/http/server.ts"
+    "dev": "tsx watch --env-file .env src/http/server.ts",
+    "build": "tsc"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.600.0",
